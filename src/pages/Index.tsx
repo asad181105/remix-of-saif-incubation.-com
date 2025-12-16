@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Hero from "@/components/sections/Hero";
+import VisionMission from "@/components/sections/VisionMission";
+import About from "@/components/sections/About";
+import BoardMembers from "@/components/sections/BoardMembers";
+import WhySAIF from "@/components/sections/WhySAIF";
+import Programs from "@/components/sections/Programs";
+import Teams from "@/components/sections/Teams";
+import Workshops from "@/components/sections/Workshops";
+import Podcast from "@/components/sections/Podcast";
+import Startups from "@/components/sections/Startups";
+import Events from "@/components/sections/Events";
+import Contact from "@/components/sections/Contact";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <VisionMission />
+      <About />
+      <BoardMembers />
+      <WhySAIF />
+      <Programs />
+      <Teams />
+      <Workshops />
+      <Podcast />
+      <Startups />
+      <Events />
+      <Contact />
+    </main>
   );
 };
 
