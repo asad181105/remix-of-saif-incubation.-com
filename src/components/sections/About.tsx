@@ -5,7 +5,7 @@ const About = () => {
     { icon: TrendingUp, value: "50+", label: "Startups Incubated" },
     { icon: Users, value: "200+", label: "Students Mentored" },
     { icon: FileSignature, value: "3+", label: "MOU Signed" },
-    { icon: Calendar, value: "100+", label: "Events Hosted" },
+    { icon: Calendar, value: "100+", label: "Workshops Hosted" },
   ];
 
   return (
