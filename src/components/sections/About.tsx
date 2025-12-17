@@ -1,10 +1,10 @@
-import { TrendingUp, Users, Award, Calendar } from "lucide-react";
+import { TrendingUp, Users, FileSignature, Calendar } from "lucide-react";
 
 const About = () => {
   const stats = [
     { icon: TrendingUp, value: "50+", label: "Startups Incubated" },
     { icon: Users, value: "200+", label: "Students Mentored" },
-    { icon: Award, value: "15+", label: "Awards Won" },
+    { icon: FileSignature, value: "3+", label: "MOU Signed" },
     { icon: Calendar, value: "100+", label: "Events Hosted" },
   ];
 

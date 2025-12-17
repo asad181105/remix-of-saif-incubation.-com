@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
@@ -7,7 +6,7 @@ import hero4 from "@/assets/hero-4.jpg";
 import hero5 from "@/assets/hero-5.jpg";
 
 const Hero = () => {
-  const images = [hero1, hero2, hero3, hero4, hero5];
+  const images = [hero2, hero1, hero3, hero4, hero5];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
@@ -37,15 +36,6 @@ const Hero = () => {
               Nurturing innovation and entrepreneurship among students. Transform your ideas into successful ventures with our comprehensive incubation program.
             </p>
             
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: "0.3s" }}>
-              <Button size="lg" className="gradient-bg hover:opacity-90 transition-opacity group">
-                Get Started
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary/20 hover:bg-primary/5">
-                Learn More
-              </Button>
-            </div>
           </div>
 
           {/* Right - Bento image grid */}

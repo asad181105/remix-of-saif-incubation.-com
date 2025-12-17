@@ -14,7 +14,7 @@ const VisionMission = () => {
               </div>
               <h3 className="text-2xl font-display font-bold mb-4 text-card-foreground">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To be the leading student-driven incubation foundation that transforms innovative ideas into successful startups, fostering a culture of entrepreneurship and creating lasting impact in the business ecosystem.
+                To nurture socially responsible innovators and entrepreneurs who create sustainable solutions for real-world challenges, empowering women to lead change through innovation, technology, and purpose-driven enterprise.
               </p>
             </div>
             <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />
@@ -29,7 +29,7 @@ const VisionMission = () => {
               </div>
               <h3 className="text-2xl font-display font-bold mb-4 text-card-foreground">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To provide comprehensive support, mentorship, and resources to student entrepreneurs, enabling them to develop viable business models, acquire essential skills, and build successful ventures that contribute to economic growth.
+                To provide a supportive incubation ecosystem that fosters creativity, skill development, mentorship, and startup growth among students and young innovators, transforming ideas into impactful ventures that benefit society.
               </p>
             </div>
             <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-accent/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500" />

@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 const BoardMembers = () => {
   const members = [
     {
-      name: "Dr. Rajesh Kumar",
-      designation: "Chairman",
-      bio: "Visionary leader with 20+ years of experience in entrepreneurship and academia.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face",
+      name: "Dr. Sr. A. Vijaya Rani",
+      designation: "Chief Patron",
+      bio: "Visionary leader guiding SAIF's mission to empower student entrepreneurs.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face",
       linkedin: "#",
     },
     {
