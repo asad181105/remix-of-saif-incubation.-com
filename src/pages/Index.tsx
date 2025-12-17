@@ -3,7 +3,6 @@ import VisionMission from "@/components/sections/VisionMission";
 import About from "@/components/sections/About";
 import BoardMembers from "@/components/sections/BoardMembers";
 import WhySAIF from "@/components/sections/WhySAIF";
-import Programs from "@/components/sections/Programs";
 import Teams from "@/components/sections/Teams";
 import Workshops from "@/components/sections/Workshops";
 import Podcast from "@/components/sections/Podcast";
@@ -19,7 +18,6 @@ const Index = () => {
       <About />
       <BoardMembers />
       <WhySAIF />
-      <Programs />
       <Teams />
       <Workshops />
       <Podcast />

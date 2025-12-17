@@ -27,9 +27,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <span className="gradient-text">SAIF</span> The Incubation
-              <br />
-              Foundation
+              <span className="gradient-text">SAIF</span> - Telangana's First Degree College Incubation Foundation
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
