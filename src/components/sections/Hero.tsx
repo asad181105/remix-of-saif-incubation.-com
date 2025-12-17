@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <span className="gradient-text">SAIF</span> Incubation
+              <span className="gradient-text">SAIF</span> The Incubation
               <br />
               Foundation
             </h1>
