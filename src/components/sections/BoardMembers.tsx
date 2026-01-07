@@ -1,5 +1,6 @@
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import directorImage from "@/assets/director.jpg";
 
 const BoardMembers = () => {
   const members = [
@@ -21,7 +22,7 @@ const BoardMembers = () => {
       name: "Dr. N. Suma Reddy",
       designation: "Director",
       bio: "Driving innovation and academic excellence in entrepreneurship education.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
+      image: directorImage,
       linkedin: "#",
     },
     {
