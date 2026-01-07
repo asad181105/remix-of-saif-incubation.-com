@@ -2,6 +2,7 @@ import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import directorImage from "@/assets/director.jpg";
 import ceoImage from "@/assets/ceo.jpg";
+import chiefPatronImage from "@/assets/chief-patron.jpg";
 
 const BoardMembers = () => {
   const members = [
@@ -9,7 +10,7 @@ const BoardMembers = () => {
       name: "Dr. Sr. A. Vijaya Rani",
       designation: "Chief Patron",
       bio: "Visionary leader guiding SAIF's mission to empower student entrepreneurs.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face",
+      image: chiefPatronImage,
       linkedin: "#",
     },
     {
