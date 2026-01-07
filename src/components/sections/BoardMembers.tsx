@@ -1,6 +1,7 @@
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import directorImage from "@/assets/director.jpg";
+import ceoImage from "@/assets/ceo.jpg";
 
 const BoardMembers = () => {
   const members = [
@@ -15,7 +16,7 @@ const BoardMembers = () => {
       name: "Dr. Naveen Vade",
       designation: "CEO",
       bio: "Leading SAIF's strategic vision and operational excellence.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+      image: ceoImage,
       linkedin: "#",
     },
     {
