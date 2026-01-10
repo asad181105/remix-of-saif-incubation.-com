@@ -4,10 +4,10 @@ import podcastVideo from "@/assets/podcast-video.mp4";
 
 const Podcast = () => {
   return (
-    <section className="py-20" id="podcast">
+    <section className="py-12" id="podcast">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/5 p-8 md:p-12">
+          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/5 p-6 md:p-8">
             {/* Background pattern */}
             <div className="absolute inset-0 opacity-30">
               <div className="absolute top-0 left-0 w-full h-full">
