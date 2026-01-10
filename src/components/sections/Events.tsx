@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Users, ArrowRight } from "lucide-react";
+import annovateImage from "@/assets/annovate.jpg";
 
 const Events = () => {
   const events = [
@@ -10,7 +11,7 @@ const Events = () => {
       date: "March 15-16, 2024",
       location: "Tech Campus Auditorium",
       attendees: "500+",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop",
+      image: annovateImage,
       featured: true,
       stats: [
         { label: "Speakers", value: "20+" },
