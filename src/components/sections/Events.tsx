@@ -1,9 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Users, ArrowRight } from "lucide-react";
-import annovateImage from "@/assets/annovate.jpg";
+import { useState, useEffect } from "react";
+import annovateImage1 from "@/assets/annovate.jpg";
+import annovateImage2 from "@/assets/annovate-2.jpg";
 
 const Events = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const annovateImages = [annovateImage1, annovateImage2];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % annovateImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   const events = [
     {
       title: "Annovate 2024",
@@ -11,7 +23,7 @@ const Events = () => {
       date: "March 15-16, 2024",
       location: "Tech Campus Auditorium",
       attendees: "500+",
-      image: annovateImage,
+      images: annovateImages,
       featured: true,
       stats: [
         { label: "Speakers", value: "20+" },
@@ -51,13 +63,42 @@ const Events = () => {
               }`}
             >
               <div className={`grid ${event.featured ? "md:grid-cols-2" : ""} gap-0`}>
-                {/* Image */}
+                {/* Image / Slideshow */}
                 <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  {event.images ? (
+                    <>
+                      {event.images.map((img, imgIndex) => (
+                        <img
+                          key={imgIndex}
+                          src={img}
+                          alt={`${event.title} - ${imgIndex + 1}`}
+                          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                            imgIndex === currentSlide ? "opacity-100" : "opacity-0"
+                          }`}
+                        />
+                      ))}
+                      {/* Slide indicators */}
+                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                        {event.images.map((_, imgIndex) => (
+                          <button
+                            key={imgIndex}
+                            onClick={() => setCurrentSlide(imgIndex)}
+                            className={`w-2 h-2 rounded-full transition-all ${
+                              imgIndex === currentSlide 
+                                ? "bg-primary w-6" 
+                                : "bg-white/50 hover:bg-white/80"
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                   {event.featured && (
                     <Badge className="absolute top-4 left-4 gradient-bg">Featured Event</Badge>
