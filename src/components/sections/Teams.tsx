@@ -2,6 +2,7 @@ import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import financeHeadImage from "@/assets/finance-head.jpeg";
 import organisingHeadImage from "@/assets/organising-head.jpeg";
+import marketingHeadImage from "@/assets/marketing-head.jpeg";
 
 interface TeamHead {
   name: string;
@@ -15,7 +16,7 @@ const Teams = () => {
     { name: "Arjun Mehta", role: "Media Team Head", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face", linkedin: "#" },
     { name: "Organizing Head", role: "Organizing Team Head", image: organisingHeadImage, linkedin: "#" },
     { name: "Finance Head", role: "Finance Team Head", image: financeHeadImage, linkedin: "#" },
-    { name: "Karan Malhotra", role: "Marketing Team Head", image: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=150&h=150&fit=crop&crop=face", linkedin: "#" },
+    { name: "Marketing Head", role: "Marketing Team Head", image: marketingHeadImage, linkedin: "#" },
     { name: "Ishaan Roy", role: "Web Design Team Head", image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&h=150&fit=crop&crop=face", linkedin: "#" },
   ];
 
