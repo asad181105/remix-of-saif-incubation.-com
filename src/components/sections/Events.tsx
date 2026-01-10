@@ -24,7 +24,6 @@ const Events = () => {
       location: "Tech Campus Auditorium",
       attendees: "500+",
       images: annovateImages,
-      featured: true,
       stats: [
         { label: "Speakers", value: "20+" },
         { label: "Startups", value: "50+" },
@@ -38,7 +37,11 @@ const Events = () => {
       location: "Innovation Hub",
       attendees: "200+",
       image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=600&h=400&fit=crop",
-      featured: false,
+      stats: [
+        { label: "Pitches", value: "15+" },
+        { label: "Investors", value: "10+" },
+        { label: "Prizes", value: "₹5L" },
+      ],
     },
   ];
 
@@ -54,15 +57,13 @@ const Events = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {events.map((event, index) => (
             <div
               key={event.title}
-              className={`group relative rounded-3xl overflow-hidden hover-lift ${
-                event.featured ? "lg:col-span-2" : ""
-              }`}
+              className="group relative rounded-3xl overflow-hidden hover-lift"
             >
-              <div className={`grid ${event.featured ? "md:grid-cols-2" : ""} gap-0`}>
+              <div className="grid gap-0">
                 {/* Image / Slideshow */}
                 <div className="relative aspect-video overflow-hidden">
                   {event.images ? (
@@ -100,13 +101,11 @@ const Events = () => {
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                  {event.featured && (
-                    <Badge className="absolute top-4 left-4 gradient-bg">Featured Event</Badge>
-                  )}
+                  <Badge className="absolute top-4 left-4 gradient-bg">Featured Event</Badge>
                 </div>
 
                 {/* Content */}
-                <div className={`p-6 md:p-8 bg-card border border-border/50 ${event.featured ? "flex flex-col justify-center" : ""}`}>
+                <div className="p-6 md:p-8 bg-card border border-border/50">
                   <h3 className="text-2xl font-display font-bold mb-3 text-card-foreground">{event.title}</h3>
                   <p className="text-muted-foreground mb-4">{event.description}</p>
                   
@@ -125,7 +124,7 @@ const Events = () => {
                     </div>
                   </div>
 
-                  {event.featured && event.stats && (
+                  {event.stats && (
                     <div className="flex gap-6 mb-6">
                       {event.stats.map((stat) => (
                         <div key={stat.label}>
@@ -136,7 +135,7 @@ const Events = () => {
                     </div>
                   )}
 
-                  <Button className={event.featured ? "gradient-bg w-fit group/btn" : "w-full"}>
+                  <Button className="gradient-bg w-fit group/btn">
                     Register Now
                     <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
