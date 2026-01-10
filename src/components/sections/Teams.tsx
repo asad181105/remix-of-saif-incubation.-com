@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import financeHeadImage from "@/assets/finance-head.jpeg";
 import organisingHeadImage from "@/assets/organising-head.jpeg";
 import marketingHeadImage from "@/assets/marketing-head.jpeg";
+import mediaHeadImage from "@/assets/media-head.jpeg";
 
 interface TeamHead {
   name: string;
@@ -13,7 +14,7 @@ interface TeamHead {
 
 const Teams = () => {
   const teamHeads = [
-    { name: "Arjun Mehta", role: "Media Team Head", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face", linkedin: "#" },
+    { name: "Media Head", role: "Media Team Head", image: mediaHeadImage, linkedin: "#" },
     { name: "Organizing Head", role: "Organizing Team Head", image: organisingHeadImage, linkedin: "#" },
     { name: "Finance Head", role: "Finance Team Head", image: financeHeadImage, linkedin: "#" },
     { name: "Marketing Head", role: "Marketing Team Head", image: marketingHeadImage, linkedin: "#" },
