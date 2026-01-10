@@ -51,7 +51,7 @@ const Podcast = () => {
               </div>
 
               {/* Video Player */}
-              <div className="relative max-w-xs mx-auto">
+              <div className="relative w-full">
                 <div className="absolute -inset-4 rounded-2xl gradient-bg opacity-20 blur-xl" />
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20">
                   <video
@@ -60,7 +60,7 @@ const Podcast = () => {
                     muted
                     loop
                     playsInline
-                    className="w-full aspect-video bg-black"
+                    className="w-full aspect-video bg-black object-cover"
                   >
                     Your browser does not support the video tag.
                   </video>
