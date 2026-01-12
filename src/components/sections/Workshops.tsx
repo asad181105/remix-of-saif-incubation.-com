@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Users, ArrowRight } from "lucide-react";
+import { Clock, Users } from "lucide-react";
 
 const Workshops = () => {
   const workshops = [
@@ -71,10 +70,6 @@ const Workshops = () => {
                     {workshop.participants} seats
                   </div>
                 </div>
-                <Button variant="ghost" size="sm" className="w-full group/btn hover:text-primary">
-                  Register
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
               </div>
             </div>
           ))}

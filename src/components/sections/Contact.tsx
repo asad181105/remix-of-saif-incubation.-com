@@ -33,8 +33,8 @@ const Contact = () => {
   };
 
   const socials = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/saif.incubationfoundation?igsh=NW1kbXV5eXd1Y2Q0", label: "Instagram" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/saif-st-anns-incubation-foundation/", label: "LinkedIn" },
     { icon: Facebook, href: "#", label: "Facebook" },
     { icon: Youtube, href: "#", label: "YouTube" },
   ];
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Address</h3>
-                  <p className="text-muted-foreground">Innovation Hub, Tech Campus<br />University Road, City - 123456</p>
+                  <p className="text-muted-foreground">2-2-823, A/45, St Anns Rd, Santosh Nagar,<br />Mehdipatnam, Hyderabad, Telangana 500028, India</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -70,7 +70,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <a href="tel:+911234567890" className="text-muted-foreground hover:text-primary transition-colors">+91 12345 67890</a>
+                  <a href="tel:+919010090959" className="text-muted-foreground hover:text-primary transition-colors">+91 90100 90959</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -79,7 +79,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <a href="mailto:hello@saif.org" className="text-muted-foreground hover:text-primary transition-colors">hello@saif.org</a>
+                  <a href="mailto:info@stannscollegehyd.com" className="text-muted-foreground hover:text-primary transition-colors block">info@stannscollegehyd.com</a>
+                  <a href="mailto:saif.ceo@st.annscollegehyd.com" className="text-muted-foreground hover:text-primary transition-colors block">saif.ceo@st.annscollegehyd.com</a>
                 </div>
               </div>
             </div>
