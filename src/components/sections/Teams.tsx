@@ -14,7 +14,7 @@ interface TeamHead {
 
 const Teams = () => {
   const teamHeads = [
-    { name: "Media Head", role: "Media Team Head", image: mediaHeadImage, linkedin: "#" },
+    { name: "Madhavi Sanskriti", role: "Media Team Head", image: mediaHeadImage, linkedin: "#" },
     { name: "Organizing Head", role: "Organizing Team Head", image: organisingHeadImage, linkedin: "#" },
     { name: "Finance Head", role: "Finance Team Head", image: financeHeadImage, linkedin: "#" },
     { name: "Vishnu Priya", role: "Marketing Team Head", image: marketingHeadImage, linkedin: "#" },
