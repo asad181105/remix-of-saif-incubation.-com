@@ -4,6 +4,7 @@ import financeHeadImage from "@/assets/finance-head.jpeg";
 import organisingHeadImage from "@/assets/organising-head.jpeg";
 import marketingHeadImage from "@/assets/marketing-head.jpeg";
 import mediaHeadImage from "@/assets/media-head.jpeg";
+import webHeadImage from "@/assets/web-head.jpeg";
 
 interface TeamHead {
   name: string;
@@ -18,7 +19,7 @@ const Teams = () => {
     { name: "Mehvish Shakeel", role: "Organizing Team Head", image: organisingHeadImage, linkedin: "#" },
     { name: "Uthara Nimmagadda", role: "Finance Team Head", image: financeHeadImage, linkedin: "#" },
     { name: "Vishnu Priya", role: "Marketing Team Head", image: marketingHeadImage, linkedin: "#" },
-    { name: "Fatima Heeba", role: "Web Design Team Head", image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&h=150&fit=crop&crop=face", linkedin: "#" },
+    { name: "Fatima Heeba", role: "Web Design Team Head", image: webHeadImage, linkedin: "#" },
   ];
 
   return (
