@@ -41,8 +41,8 @@ const Teams = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className={`w-full h-full rounded-full border-4 border-border group-hover:border-primary transition-colors ${
-                    member.role === "Web Design Team Head" ? "object-cover object-[center_15%] scale-150" : "object-cover"
+                  className={`w-full h-full object-cover rounded-full border-4 border-border group-hover:border-primary transition-colors ${
+                    member.role === "Web Design Team Head" ? "object-[center_20%]" : ""
                   }`}
                 />
                 {member.linkedin && (
