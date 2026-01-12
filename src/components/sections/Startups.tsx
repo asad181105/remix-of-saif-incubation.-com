@@ -1,17 +1,19 @@
+import startupLogos from "@/assets/startup-logos.jpeg";
+
 const Startups = () => {
   const startups = [
-    { name: "TechNova", logo: "🚀" },
-    { name: "GreenLeaf", logo: "🌿" },
-    { name: "FinFlow", logo: "💰" },
-    { name: "HealthHub", logo: "🏥" },
-    { name: "EduSpark", logo: "📚" },
-    { name: "FoodieApp", logo: "🍔" },
-    { name: "TravelMate", logo: "✈️" },
-    { name: "AIAssist", logo: "🤖" },
-    { name: "CleanEnergy", logo: "⚡" },
-    { name: "SmartHome", logo: "🏠" },
-    { name: "FitLife", logo: "💪" },
-    { name: "ArtSpace", logo: "🎨" },
+    { name: "Soma Scents", logo: null, isImage: true, position: "0% 0%" },
+    { name: "Ziya Candles", logo: null, isImage: true, position: "0% 50%" },
+    { name: "AeroChill", logo: null, isImage: true, position: "50% 100%" },
+    { name: "TechNova", logo: "🚀", isImage: false },
+    { name: "GreenLeaf", logo: "🌿", isImage: false },
+    { name: "FinFlow", logo: "💰", isImage: false },
+    { name: "HealthHub", logo: "🏥", isImage: false },
+    { name: "EduSpark", logo: "📚", isImage: false },
+    { name: "FoodieApp", logo: "🍔", isImage: false },
+    { name: "TravelMate", logo: "✈️", isImage: false },
+    { name: "AIAssist", logo: "🤖", isImage: false },
+    { name: "CleanEnergy", logo: "⚡", isImage: false },
   ];
 
   // Duplicate for seamless loop
@@ -33,12 +35,22 @@ const Startups = () => {
           {allStartups.map((startup, index) => (
             <div
               key={`${startup.name}-${index}`}
-              className="flex-shrink-0 w-32 h-12 mx-4 flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group cursor-pointer"
+              className="flex-shrink-0 w-32 h-12 mx-4 flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden"
             >
-              <span className="text-xl">{startup.logo}</span>
-              <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors whitespace-nowrap">
-                {startup.name}
-              </span>
+              {startup.isImage ? (
+                <img 
+                  src={startupLogos} 
+                  alt={startup.name}
+                  className="h-10 w-auto object-contain"
+                />
+              ) : (
+                <>
+                  <span className="text-xl">{startup.logo}</span>
+                  <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors whitespace-nowrap">
+                    {startup.name}
+                  </span>
+                </>
+              )}
             </div>
           ))}
         </div>
