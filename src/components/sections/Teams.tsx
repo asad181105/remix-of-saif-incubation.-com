@@ -15,10 +15,10 @@ interface TeamHead {
 const Teams = () => {
   const teamHeads = [
     { name: "Madhavi Sanskriti", role: "Media Team Head", image: mediaHeadImage, linkedin: "#" },
-    { name: "Organizing Head", role: "Organizing Team Head", image: organisingHeadImage, linkedin: "#" },
-    { name: "Finance Head", role: "Finance Team Head", image: financeHeadImage, linkedin: "#" },
+    { name: "Mehvish Shakeel", role: "Organizing Team Head", image: organisingHeadImage, linkedin: "#" },
+    { name: "Uthara Nimmagadda", role: "Finance Team Head", image: financeHeadImage, linkedin: "#" },
     { name: "Vishnu Priya", role: "Marketing Team Head", image: marketingHeadImage, linkedin: "#" },
-    { name: "Ishaan Roy", role: "Web Design Team Head", image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&h=150&fit=crop&crop=face", linkedin: "#" },
+    { name: "Fatima Heeba", role: "Web Design Team Head", image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&h=150&fit=crop&crop=face", linkedin: "#" },
   ];
 
   return (
