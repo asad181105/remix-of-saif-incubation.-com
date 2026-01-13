@@ -1,9 +1,9 @@
-import startupLogos from "@/assets/startup-logos.jpeg";
 import ziyaLogo from "@/assets/ziya-logo.jpeg";
+import somaScentsLogo from "@/assets/soma-scents-logo.jpeg";
 
 const Startups = () => {
   const startups = [
-    { name: "Soma Scents", logo: startupLogos, isImage: true },
+    { name: "Soma Scents", logo: somaScentsLogo, isImage: true },
     { name: "Ziya Candles", logo: ziyaLogo, isImage: true },
     { name: "AeroChill", logo: null, isImage: false, emoji: "❄️" },
     { name: "TechNova", logo: null, isImage: false, emoji: "🚀" },
