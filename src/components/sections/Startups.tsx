@@ -1,19 +1,20 @@
 import startupLogos from "@/assets/startup-logos.jpeg";
+import ziyaLogo from "@/assets/ziya-logo.jpeg";
 
 const Startups = () => {
   const startups = [
-    { name: "Soma Scents", logo: null, isImage: true, position: "0% 0%" },
-    { name: "Ziya Candles", logo: null, isImage: true, position: "0% 50%" },
-    { name: "AeroChill", logo: null, isImage: true, position: "50% 100%" },
-    { name: "TechNova", logo: "🚀", isImage: false },
-    { name: "GreenLeaf", logo: "🌿", isImage: false },
-    { name: "FinFlow", logo: "💰", isImage: false },
-    { name: "HealthHub", logo: "🏥", isImage: false },
-    { name: "EduSpark", logo: "📚", isImage: false },
-    { name: "FoodieApp", logo: "🍔", isImage: false },
-    { name: "TravelMate", logo: "✈️", isImage: false },
-    { name: "AIAssist", logo: "🤖", isImage: false },
-    { name: "CleanEnergy", logo: "⚡", isImage: false },
+    { name: "Soma Scents", logo: startupLogos, isImage: true },
+    { name: "Ziya Candles", logo: ziyaLogo, isImage: true },
+    { name: "AeroChill", logo: null, isImage: false, emoji: "❄️" },
+    { name: "TechNova", logo: null, isImage: false, emoji: "🚀" },
+    { name: "GreenLeaf", logo: null, isImage: false, emoji: "🌿" },
+    { name: "FinFlow", logo: null, isImage: false, emoji: "💰" },
+    { name: "HealthHub", logo: null, isImage: false, emoji: "🏥" },
+    { name: "EduSpark", logo: null, isImage: false, emoji: "📚" },
+    { name: "FoodieApp", logo: null, isImage: false, emoji: "🍔" },
+    { name: "TravelMate", logo: null, isImage: false, emoji: "✈️" },
+    { name: "AIAssist", logo: null, isImage: false, emoji: "🤖" },
+    { name: "CleanEnergy", logo: null, isImage: false, emoji: "⚡" },
   ];
 
   // Duplicate for seamless loop
@@ -37,15 +38,15 @@ const Startups = () => {
               key={`${startup.name}-${index}`}
               className="flex-shrink-0 w-36 h-16 mx-4 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden"
             >
-              {startup.isImage ? (
+              {startup.isImage && startup.logo ? (
                 <img 
-                  src={startupLogos} 
+                  src={startup.logo} 
                   alt={startup.name}
                   className="h-14 w-auto object-contain"
                 />
               ) : (
                 <>
-                  <span className="text-xl">{startup.logo}</span>
+                  <span className="text-xl">{startup.emoji}</span>
                   <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors whitespace-nowrap">
                     {startup.name}
                   </span>
