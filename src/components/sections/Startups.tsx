@@ -1,10 +1,12 @@
 import ziyaLogo from "@/assets/ziya-logo.jpeg";
 import somaScentsLogo from "@/assets/soma-scents-logo.jpeg";
+import oliveEcoBeautyLogo from "@/assets/olive-ecobeauty-logo.jpeg";
 
 const Startups = () => {
   const startups = [
     { name: "Soma Scents", logo: somaScentsLogo, isImage: true },
     { name: "Ziya Candles", logo: ziyaLogo, isImage: true },
+    { name: "Olive EcoBeauty", logo: oliveEcoBeautyLogo, isImage: true },
   ];
 
   // Duplicate for seamless loop
