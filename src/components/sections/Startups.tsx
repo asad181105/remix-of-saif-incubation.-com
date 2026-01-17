@@ -3,6 +3,7 @@ import somaScentsLogo from "@/assets/soma-scents-logo.jpeg";
 import oliveEcoBeautyLogo from "@/assets/olive-ecobeauty-logo.jpeg";
 import minncoPetcareLogo from "@/assets/minnco-petcare-logo.jpeg";
 import aeroChillLogo from "@/assets/aerochill-logo.jpeg";
+import ecodualLogo from "@/assets/ecodual-logo.jpeg";
 
 const Startups = () => {
   const startups = [
@@ -11,6 +12,7 @@ const Startups = () => {
     { name: "Olive EcoBeauty", logo: oliveEcoBeautyLogo, isImage: true },
     { name: "MinnCo. Petcare", logo: minncoPetcareLogo, isImage: true },
     { name: "AeroChill", logo: aeroChillLogo, isImage: true },
+    { name: "Ecodual", logo: ecodualLogo, isImage: true },
   ];
 
   // Duplicate for seamless loop
