@@ -1,4 +1,5 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
@@ -35,6 +36,15 @@ const Hero = () => {
           }}>
               Nurturing innovation and entrepreneurship among students. Transform your ideas into successful ventures with our comprehensive incubation program.
             </p>
+
+            <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
+              <Button size="lg" className="group" asChild>
+                <a href="https://forms.gle/bPKU3UFRuf18AuE9A" target="_blank" rel="noopener noreferrer">
+                  Apply Now
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+            </div>
             
           </div>
 
