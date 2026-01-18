@@ -33,7 +33,7 @@ const Podcast = () => {
                   <span className="text-sm font-medium">SAIF Podcast</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-display font-bold">
-                  <span className="gradient-text">Startup Stories</span>
+                  <span className="gradient-text">SAIF Talks</span>
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Tune in to hear inspiring stories from successful entrepreneurs, industry experts, and SAIF alumni. Learn from their journeys, challenges, and victories.
@@ -43,10 +43,12 @@ const Podcast = () => {
                     <Play className="mr-2 w-4 h-4" />
                     Watch Now
                   </Button>
-                  <Button variant="outline" className="border-primary/20">
-                    <ExternalLink className="mr-2 w-4 h-4" />
-                    All Episodes
-                  </Button>
+                  <a href="https://www.youtube.com/@StAnnsIncubationFoundation" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" className="border-primary/20">
+                      <ExternalLink className="mr-2 w-4 h-4" />
+                      All Episodes
+                    </Button>
+                  </a>
                 </div>
               </div>
 
