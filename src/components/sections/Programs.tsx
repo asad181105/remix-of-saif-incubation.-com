@@ -76,9 +76,15 @@ const Programs = () => {
                     </Badge>
                   ))}
                 </div>
-                <Button className="w-full group/btn" variant={program.featured ? "default" : "outline"}>
-                  Apply Now
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                <Button 
+                  className="w-full group/btn" 
+                  variant={program.featured ? "default" : "outline"}
+                  asChild
+                >
+                  <a href="https://forms.gle/bPKU3UFRuf18AuE9A" target="_blank" rel="noopener noreferrer">
+                    Apply Now
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
                 </Button>
               </CardContent>
             </Card>
