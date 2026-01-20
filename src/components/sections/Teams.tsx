@@ -16,12 +16,12 @@ interface TeamHead {
 
 const Teams = () => {
   const teamHeads = [
+    { name: "Aditi Tyagi", role: "SAIF Interns Head", image: internsHeadImage, linkedin: "#" },
     { name: "Madhavi Sanskriti", role: "Media Team Head", image: mediaHeadImage, linkedin: "#" },
     { name: "Mehvish Shakeel", role: "Organizing Team Head", image: organisingHeadImage, linkedin: "#" },
     { name: "Uthara Nimmagadda", role: "Finance Team Head", image: financeHeadImage, linkedin: "#" },
     { name: "Vishnu Priya", role: "Marketing Team Head", image: marketingHeadImage, linkedin: "#" },
     { name: "Fatima Heeba", role: "Web Design Team Head", image: webHeadImage, linkedin: "#" },
-    { name: "Aditi Tyagi", role: "SAIF Interns Head", image: internsHeadImage, linkedin: "#" },
   ];
 
   return (
