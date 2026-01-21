@@ -7,6 +7,7 @@ import mediaHeadImage from "@/assets/media-head.jpeg";
 import webHeadImage from "@/assets/web-head.jpeg";
 import internsHeadImage from "@/assets/interns-head.jpeg";
 import afrahHassanImage from "@/assets/afrah-hassan.jpeg";
+import amenaFatimaImage from "@/assets/amena-fatima.jpeg";
 
 interface TeamHead {
   name: string;
@@ -24,6 +25,7 @@ const Teams = () => {
     { name: "Vishnu Priya", role: "Marketing Team Head", image: marketingHeadImage, linkedin: "#" },
     { name: "Fatima Heeba", role: "Web Design Team Head", image: webHeadImage, linkedin: "#" },
     { name: "Afrah Hassan", role: "Core Team Member", image: afrahHassanImage, linkedin: "#" },
+    { name: "Amena Fatima", role: "Core Team Member", image: amenaFatimaImage, linkedin: "#" },
   ];
 
   return (
