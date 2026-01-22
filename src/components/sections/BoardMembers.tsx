@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import directorImage from "@/assets/director.jpg";
 import ceoImage from "@/assets/ceo.jpg";
 import chiefPatronImage from "@/assets/chief-patron.jpg";
-import programManagerImage from "@/assets/program-manager.jpg";
 
 const BoardMembers = () => {
   const members = [
@@ -26,13 +25,6 @@ const BoardMembers = () => {
       designation: "Director",
       bio: "Driving innovation and academic excellence in entrepreneurship education.",
       image: directorImage,
-      linkedin: "#",
-    },
-    {
-      name: "Mr. Tajdar Ali",
-      designation: "Program Manager",
-      bio: "Managing and coordinating SAIF's entrepreneurship programs and initiatives.",
-      image: programManagerImage,
       linkedin: "#",
     },
   ];
