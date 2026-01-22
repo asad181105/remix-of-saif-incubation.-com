@@ -41,7 +41,7 @@ const BoardMembers = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {members.map((member, index) => (
             <div
               key={member.name}
